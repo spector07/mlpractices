@@ -1,0 +1,13 @@
+{% extends 'base.html' %}
+{% block head %}
+<title>Prediction</title>
+<link rel="stylesheet" href="{{ url_for('static', filename='css/bootstrap.min.css') }}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+{% endblock %}
+{% block body %}
+     <div class="row justify-content-md-center m-top05">
+            <div class="col-md-4">
+                <h3>Admission Prediction - {prediction}</h3>
+            </div>
+    </div>
+{% endblock %}
